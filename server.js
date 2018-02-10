@@ -59,6 +59,12 @@ app.get('/projects', (req, res) => {
     });
 });
 
+app.get('/contact', (req,res) => {
+    res.render('contact.hbs', {
+        pageTitle:'contact page'
+    });
+});
+
 app.get('/bad', (req,res) => {
     res.send ({
         errorMassage:'Unable to load page!'  
